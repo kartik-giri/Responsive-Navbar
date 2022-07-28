@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    background-color: #262626;
+}
+.cross{
+   max-height: 3.5vh;
+   display: none;
+}
+.hamburger{
+    max-height: 3vh;
+    display: none;
+}
+
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 30px;
+
+}
+
+.nav-menu{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-link:hover{
+    color: dodgerblue;
+    transition: 0.3;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    margin-left: 10px;
+}
+.box{
+
+        background-color: rgb(228, 228, 228);
+        height: 90vh;
+        width: 100%;
+}
+
+@media screen and (max-width : 764px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        background-color: #262626;
+        display: block;
+        height: 100vh;
+        width: 50%;
+        right: 0%;
+        bottom: 0%;
+        padding: 20px;
+        right: -100%;
+        /* right: 0%; */
+        transition: 0.5s;
+        z-index: 999;
+    }
+    .nav-item{
+        margin-top: 18px;
+    }
+
+    .cross{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        cursor: pointer;
+
+    }
+    .active{
+        right: 0%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
